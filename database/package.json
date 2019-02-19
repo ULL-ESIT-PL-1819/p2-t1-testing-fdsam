@@ -4,15 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
- "test": "mocha",
-  "test:watch": "mocha --watch --reporter min",
-  "test:debug": "node  node_modules/mocha/bin/_mocha --watch --no-timeouts"
+    "test": "mocha",
+    "test:watch": "mocha --watch --reporter min",
+    "test:debug": "node  node_modules/mocha/bin/_mocha --watch --no-timeouts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chai": "3.5.0",
+    "gulp": "^4.0.0",
     "mocha": "2.4.5"
   },
   "dependencies": {
