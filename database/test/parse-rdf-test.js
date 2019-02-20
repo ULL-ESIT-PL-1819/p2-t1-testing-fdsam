@@ -30,5 +30,8 @@ expect(book).to.have.a.property('subjects')
 .that.is.an('array').with.lengthOf(2)
 .and.contains('Military art and science -- Early works to 1800')
 .and.contains('War -- Early works to 1800');
+
+  expect(book).to.have.a.property('lcc')
+.that.is.a('string').that.matches(/^[^IOWXYa-z]+/); //al menos  uno de ellos no es 't IOWX or Y
 });
 

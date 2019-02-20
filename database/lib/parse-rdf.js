@@ -13,6 +13,14 @@ module.exports = rdf => {
     book.subjects = $('[rdf\\:resource$="/LCSH"]')
 .parent().find('rdf\\:value')
 .toArray().map(elem => $(elem).text());
+
+    //encontrar source que termina en LCC
+
+    book.lcc = $('[rdf\\:resource$="/LCC"]')
+        .parent().find('rdf\\:value')
+.toArray().map(elem => $(elem).text())[0];
+
+
  
 return book;
 };
