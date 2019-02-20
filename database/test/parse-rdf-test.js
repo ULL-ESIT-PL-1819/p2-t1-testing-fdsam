@@ -10,6 +10,8 @@ describe('parseRDF',() => {
 
 });
 
+
+
 it('should parse RDF content', () => {
 const book = parseRDF(rdf);
 expect(book).to.be.an('object');

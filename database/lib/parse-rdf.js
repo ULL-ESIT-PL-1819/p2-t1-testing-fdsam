@@ -21,6 +21,7 @@ module.exports = rdf => {
 .toArray().map(elem => $(elem).text())[0];
 
 
+
  
 return book;
 };
