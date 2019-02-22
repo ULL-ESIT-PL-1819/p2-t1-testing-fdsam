@@ -216,6 +216,10 @@ y eje cutamos $ npm run test:debug
 
 ![](https://github.com/ULL-ESIT-PL-1819/p2-t1-testing-fdsam/blob/master/capturas/Capturssa.PNG?raw=true)
 
+#gulp file 
+
+
+
 
 
 
