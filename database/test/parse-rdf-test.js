@@ -35,5 +35,8 @@ expect(book).to.have.a.property('subjects')
 
   expect(book).to.have.a.property('lcc')
 .that.is.a('string').that.matches(/^[^IOWXYa-z]+/); //al menos  uno de ellos no es 't IOWX or Y
+
+expect(book.authors).to.all.have.property("name").and.all.have.a.property("webpages");
+
 });
 
