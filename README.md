@@ -219,7 +219,42 @@ y eje cutamos $ npm run test:debug
 
 
 
+#Primer 
 
+•Wrapping Up
+```javascript
+    book.lcc = $('[rdf\\:resource$="/LCC"]')
+        .parent().find('rdf\\:value')
+.toArray().map(elem => $(elem).text())[0];
+};
+```
+
+#Segundo ejercicios
+•Extracting Classification Codes
+```javascript
+book.sources =  $("pgterms\\:file").toArray().map((elem) => {
+        let value = {};
+        value.link = $(elem).attr("rdf:about");
+        value.type = $(elem).find("rdf\\:Description").find("rdf\\:value").text();
+        return value;
+    });
+};
+```
+
+#Modificacion de clase
+
+```javascript
+book.authors = $('pgterms\\:agent').toArray().map((elem) => { 
+      let value = {};
+       value.name = $(elem).find("pgterms\\:name").text();
+       value.webpage = $(elem).find("pgterms\\:webpage").toArray().map((elem) =>{
+           let value = $(elem).attr("rdf:resource");
+          return value;
+       });
+      return value;
+  });
+};
+```
 
 
 
